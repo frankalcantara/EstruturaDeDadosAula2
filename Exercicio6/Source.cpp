@@ -11,13 +11,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#define NUMEROVENDEDORES 5
+#define NUMEROVENDEDORES 3
 
 void main() {
 	float preco[NUMEROVENDEDORES];
 	int quant[NUMEROVENDEDORES], x, total = 0, c = 0;
 
-	for (x = 0; x< NUMEROVENDEDORES; x++){
+	for (x = 0; x < NUMEROVENDEDORES; x++){
 		printf( "Informar a quantidade de peças vendidas pelo %d vendedor\n", x + 1 );
 		scanf_s( "%d", &quant[x] );
 		//sempre limpe o buffer de teclado depois de usar o scanf/scanf_s
@@ -31,8 +31,9 @@ void main() {
 		total += quant[x];
 	}
 
-	for (x = 0; x<NUMEROVENDEDORES; x++)
-		printf( "A valor total das vendas do vendedor %d foi de %f\n", x + 1, quant[x] * preco[x] );
+	for (x = 0; x < NUMEROVENDEDORES; x++)
+		//imprimindo o valor total das peças com duas casas decimais
+		printf( "A valor total das vendas do vendedor %d foi de %0.2f\n", x + 1, quant[x] * preco[x] );
 
 	printf( "A quantidade total de peças vendidas foi %d\n", total );
 	system( "pause" );
