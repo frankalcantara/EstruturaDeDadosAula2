@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//para poder testar o código vamos usar duas 
-//macros, de forma que possamos ajustar os números 
-//no mesmo lugar
 #define NUMEROTURMAS 10
 #define NUMEROALUNOS 30
 

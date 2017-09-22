@@ -13,7 +13,7 @@ int main(){
 		while ((c = getchar()) != '\n' && c != EOF) {}
 		soma += idade[x];
 	}
-
+	//para fazer o tipecasting de inteiro para float
 	media = (float)soma / 30;
 	printf( "A média de idade dos alunos: %f\n", media );
 	

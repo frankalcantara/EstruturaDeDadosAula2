@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//Vamos usar uma macro para poder alterar
-//o numero de pessoas em um único lugar do código
-//para poder testar sem ter que digitar 50 vezes
 #define NUMEROPESSOAS 50
 
 int main() {
@@ -12,7 +9,7 @@ int main() {
 		float peso, altura;
 	};
 
-	struct Dados pessoa[NUMEROPESSOAS] = {0};
+	struct Dados pessoa[NUMEROPESSOAS] = {0};		//definindo uma instânca da struct
 	int x, qtd_peso = 0, c = 0;
 	float media = 0;
 
